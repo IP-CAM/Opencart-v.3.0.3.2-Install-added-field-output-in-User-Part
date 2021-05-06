@@ -56,6 +56,14 @@
                         {% endif %} </div>
                     </div>
                     <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-altname{{ language.language_id }}">{{ entry_altname }}</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="product_description[{{ language.language_id }}][altname]" value="{{ product_description[language.language_id] ? product_description[language.language_id].altname }}" placeholder="{{ entry_altname }}" id="input-altname{{ language.language_id }}" class="form-control"/>
+                        {% if error_altname[language.language_id] %}
+                          <div class="text-danger">{{ error_altname[language.language_id] }}</div>
+                        {% endif %} </div>
+                    </div>
+                    <div class="form-group">
                       <label class="col-sm-2 control-label" for="input-description{{ language.language_id }}">{{ entry_description }}</label>
                       <div class="col-sm-10">
                         <textarea name="product_description[{{ language.language_id }}][description]" placeholder="{{ entry_description }}" id="input-description{{ language.language_id }}" data-toggle="summernote" data-lang="{{ summernote }}" class="form-control">{{ product_description[language.language_id] ? product_description[language.language_id].description }}</textarea>

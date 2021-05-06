@@ -28,6 +28,7 @@ $_['column_action']          = 'Action';
 
 // Entry
 $_['entry_name']             = 'Product Name';
+$_['entry_altname']             = 'Product Alternative Name';
 $_['entry_description']      = 'Description';
 $_['entry_meta_title']       = 'Meta Tag Title';
 $_['entry_meta_keyword']     = 'Meta Tag Keywords';
@@ -104,6 +105,7 @@ $_['help_tag']               = 'Comma separated';
 $_['error_warning']          = 'Warning: Please check the form carefully for errors!';
 $_['error_permission']       = 'Warning: You do not have permission to modify products!';
 $_['error_name']             = 'Product Name must be greater than 1 and less than 255 characters!';
+$_['error_altname']          = 'Product Alternative Name must be greater than 1 and less than 255 characters!';
 $_['error_meta_title']       = 'Meta Title must be greater than 1 and less than 255 characters!';
 $_['error_model']            = 'Product Model must be greater than 1 and less than 64 characters!';
 $_['error_keyword']          = 'SEO URL already in use!';
